@@ -1,5 +1,5 @@
 {% set name = "glue-plotly" %}
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: c85e3f236259b8145a8532df5453adfc038be4585b13301f7877b23b85a9972e
+  sha256: d098e4f1e3abd14908b1bd325c823803d41066e3744575c672f09aaf5e46cc5e
 
 build:
   noarch: python
@@ -17,6 +17,7 @@ build:
 requirements:
   host:
     - python >=3.8
+    - setuptools
     - setuptools-scm
     - pip
   run:
