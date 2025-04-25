@@ -23,7 +23,7 @@ requirements:
   run:
     - python >=3.10
     - glue-core >=1.13.1
-    - plotly<6.0.0a0
+    - plotly <6.0.0a0
     - chart-studio
 
 test:
