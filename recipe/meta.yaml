@@ -1,13 +1,13 @@
 {% set name = "glue-plotly" %}
-{% set version = "0.10.0" %}
+{% set version = "0.12.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 38a98acb940b985fbb48a9cbdbf50e67123ec582d0bd0b39c1a5afdeb5a6285f
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: f9f06b18e661ea61089967b2735698efa7c93da62eac2d899a0402546463f04a
 
 build:
   noarch: python
@@ -16,14 +16,14 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.10
     - setuptools
     - setuptools-scm
     - pip
   run:
-    - python >=3.8
+    - python >=3.10
     - glue-core >=1.13.1
-    - plotly
+    - plotly <6.0.0a0
     - chart-studio
 
 test:
