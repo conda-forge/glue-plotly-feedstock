@@ -16,14 +16,14 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.10
     - setuptools
     - setuptools-scm
     - pip
   run:
-    - python >=3.8
+    - python >=3.10
     - glue-core >=1.13.1
-    - plotly
+    - plotly<6.0.0a0
     - chart-studio
 
 test:
