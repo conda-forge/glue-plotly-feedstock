@@ -1,5 +1,5 @@
 {% set name = "glue-plotly" %}
-{% set version = "0.12.1" %}
+{% set version = "0.12.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: f9f06b18e661ea61089967b2735698efa7c93da62eac2d899a0402546463f04a
+  sha256: ca731b775886e5ee288586aec0efc6210b0b6d11ff257efb1a68a269cf2b86b4
 
 build:
   noarch: python
